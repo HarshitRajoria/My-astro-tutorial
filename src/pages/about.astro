@@ -1,5 +1,6 @@
 ---
-const pageTitle = "About";
+import '../styles/global.css';
+const pageTitle = "About Me";
 
 const identity = {
   firstName: "Harshit",
@@ -10,6 +11,8 @@ const identity = {
 
 const skills = ["HTML", "CSS", "UX Design", "Material Handling", "Astro"];
 const skillColor = "navy";
+const fontWeight = "bold";
+const textCase = "uppercase";
 ---
 
 <html lang="en">
@@ -20,7 +23,7 @@ const skillColor = "navy";
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 
-      <style define:vars={{skillColor}}>
+      <style define:vars={{skillColor, fontWeight, textCase}}>
        h1 {
         color:black;
         font-size: 36px;
@@ -28,7 +31,8 @@ const skillColor = "navy";
 
        .skill {
         color: var(--skillColor);
-        font-weight: bold;
+        font-weight: var(--fontWeight);
+        text-transform: var(--textCase);
         }
       </style>
 	</head>
@@ -40,11 +44,15 @@ const skillColor = "navy";
     <a href="/blog/">Blog</a>
 
     <h1>{pageTitle}</h1>
-		<h2>...and my new Astro site</h2>
+		<h2>...but first little bit about my website</h2>
 
-		<p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+    <p>This website is about deep diving into my experiences where you will look at all of my work connected with my interests. Even building this website from scratch will itself be a part of my portfolio. This website is totally made by me without depending on any constraints where I have to follow somebody else's guideline or layout. I believe in Independent Ownership where, I as a designer, can showcase my progress and share personal knowledge. It is a safe platform where you will flow freely.</p>
 
-		<p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+    <p>If you'll give time in the exploration, it may assist you with many resources and insights as well. I will be updating my website in every 6 months and always try to make it feel like a friend sharing his experiences to another friend.</p>
+
+		<p>Curious and detail-driven Communication Design student with a strong focus on UX, interaction design, and narrative thinking. I approach design through the lens of empathy and logic, balancing research, storytelling, and structure to craft experiences that resonate. </p>
+
+		<p>With roots in sustainable product design, my mindset is grounded in ethics and a sense of responsibility toward society. I'm currently exploring how people interact, decide, reacts and feel and then focus on translating insights into intentional flows and intuitive interfaces. I work best in collaborative, hands-on environments and believe in designing with clarity and purpose.</p>
 
 		<p>Here are a few facts about me:</p>
      <ul>
